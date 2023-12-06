@@ -1,0 +1,52 @@
+
+body{
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;/*字型*/
+    height: 100vh;/*高度*/
+    
+}
+#box{
+    background-color: white;/* 調整背景顏色 */
+    justify-content:center;/* 底部盒子置中 */
+    width: 80%;
+    margin: auto;/*邊界*/
+    border-radius: 20px;
+    padding:15px;/* 留白 */
+
+}
+
+#qrcode {
+    border-radius: 10px;/*底部邊框*/
+    display: flex;/*布局:彈性*/
+    border-radius: 10px;
+ 
+}
+img{
+    border-radius: 10px;/*圖片邊框*/
+}
+#text{
+    padding: 0 20px;
+    text-align: center;/*文字對齊:置中*/
+
+}
+#h1{
+    font-size: 20px;/*文字大小*/
+    font-weight: 700;/*字體粗細*/
+    padding-top: 15px;/*文字上邊留白*/
+    color:hsl(218, 44%, 22%);
+    width: 100%;/*寬度*/
+}
+#p{
+    font-size: 15px;
+    padding: 15px 0;
+    color: hsl(212, 45%, 89%);
+}
+@media screen and (min-width: 375px)/*最小寬度(手機/行動端) */and (max-width: 1440px) /*最大寬段(電腦端)*/{
+    #box {
+        max-width: 300px;
+        margin: auto;
+    }
+}
